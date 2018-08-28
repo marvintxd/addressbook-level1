@@ -90,6 +90,17 @@
   # listing indexes get updated on next request
   delete 1
   list
+##########################################################
+# test sort command
+##########################################################
+
+  # add person so address book is not in order
+  add Adam p/12345 e/a@b.com
+  list
+
+  # sorts address book
+  sort
+  list
 
 ##########################################################
 # test clear command
