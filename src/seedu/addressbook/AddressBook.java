@@ -850,7 +850,7 @@ public class AddressBook {
     private static void sortAddressBook() {
         Collections.sort(ALL_PERSONS, new Comparator<String[]>(){
             public int compare(String[] a1, String[] a2) {
-                return a1[0].compareTo(a2[0]);
+                return a1[PERSON_DATA_INDEX_NAME].compareTo(a2[PERSON_DATA_INDEX_NAME]);
             }
         });
         savePersonsToFile(getAllPersonsInAddressBook(), storageFilePath);
